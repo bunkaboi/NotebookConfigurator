@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    
+}
+
+.container{
+    display: flex;
+    
+}
+
+.notebook-pagemarker-penloop-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    margin-left: 10%;
+}
+
+.notebook-pagemarker-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+
+/* 795x548 = A5*/
+.notebook{
+   
+    width: 14.5cm;
+    height: 21cm;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 1px solid black;
+    border-radius: 2px 20px 20px 2px;
+    display: flex;
+    justify-content: space-between;
+    filter: drop-shadow(-15px 15px 5px rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(10px);
+    box-shadow: -20px -20px 50px -30px rgba(0,0,0,0.2) inset;
+    box-shadow: inset -1px 1px 3px -1px rgba(255,255,255,0.7);
+}
+
+.sizeBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+
+
+
+
+.enclosureband{
+    width: 0.6cm;
+    height: 21.04cm;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 1px solid black;
+    border-radius: 2px 2px 2px 2px;
+    transform: translateY(-0.04cm);
+    margin-right: 1.9cm;
+    filter: drop-shadow(-2px 2px 1px rgba(0, 0, 0, 0.3));
+}
+
+.foldShadow{
+    width: 0.5cm;
+    height: 21cm;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.00001);
+    box-shadow: inset -0.3cm 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.pagemarkers{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 1.5cm;
+    height: 2cm;
+    margin-top: -3px;
+    margin-left: 1cm;
+    padding-right: 12cm;
+    
+}
+
+.pagemarkerLeft{
+    width: 0.6cm;
+    height: 1.2cm;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 1px solid black;
+    border-radius: 2px 2px 2px 2px;
+    filter: drop-shadow(-15px 15px 5px rgba(0, 0, 0, 0.5));
+    z-index: -1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pagemarkerStripes{
+    width: 0.12cm;
+    height: 1.2cm;
+    background-color: rgb(71, 71, 71);
+   
+}
+
+.pagemarkerRight{
+    width: 0.6cm;
+    height: 1.2cm;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 1px solid black;
+    border-radius: 2px 2px 2px 2px;
+    filter: drop-shadow(-15px 15px 5px rgba(0, 0, 0, 0.5));
+    z-index: -2;
+}
+
+.margins{
+    width: 14.5cm;
+    height: 21cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.margin-container{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    height: 100%;
+    object-fit: cover;  
+    color: rgb(255, 0, 0); 
+    
+}
+
+.margin{
+    width: 1px; 
+    height: 100%;   
+    background-color: rgb(255, 0, 0);
+    border: 1px solid grey;
+    margin-right: 8px;
+}
+
+.imgLogo {
+    width: 40mm;
+    margin-top: 15mm;
+    margin-left: 15mm;
+    height: fit-content;
+    filter: invert(100%);
+}
+
+.size-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.penloop{
+    width: 1.1cm;
+    height: 1.7cm;
+    background-color: rgba(0, 0, 0, 0.95);
+    border: 0 1px 1px 1px solid black;
+    border-left: none;
+    border-radius: 2px 2px 2px 2px;
+    filter: drop-shadow(-15px 15px 5px rgba(0, 0, 0, 0.5));
+    z-index: -5;
+    transform: translateY(-1.4cm);
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2) inset;
+    
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 48px;
+    margin-left: 12px;
+    filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+select{
+    border-style: 1px solid rgb(56, 56, 56);;
+    background-color: rgb(255, 255, 255);
+    color: rgb(106, 106, 106);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 0 35px 35px 0;
+    text-align: start;
+    cursor: pointer;
+    margin-bottom: 16px;
+    font-style: italic;
+}
+
+.menuPoint{
+    border-style: 1px solid rgb(56, 56, 56);;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 35px 0 0 35px;
+    text-align: end;
+    cursor: pointer;
+    margin-bottom: 16px;
+    z-index: 1;
+    width: 50%;
+}
+.menuFrame {
+    display: flex;
+}
+
+select:focus {
+        outline-width: 0;
+        box-shadow: 0 0 3px rgb(100, 100, 100);
+}
+
+option:hover {
+    background-color: blueviolet;
+}
+
+option:first-child {
+        color: rgb(88, 88, 88);
+        font-style: italic;
+}
+
+.noA5 {
+    display:none;
+}
+
+.noA4-Classic {
+    display:none;
+}
+
+.cover{
+    position: relative;
+    display: inline-block;
+}
